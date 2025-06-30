@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XNo Documentation - Why Self-Hosted?</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0; 
+      background: #f5f7fa;
+      color: #1a202c;
+      line-height: 1.6;
+    }
+    header {
+      background: #3b82f6;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgb(59 130 246 / 0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: white;
+      border-radius: 8px;
+      padding: 2rem 3rem;
+      box-shadow: 0 4px 16px rgb(0 0 0 / 0.1);
+    }
+    h2 {
+      color: #2563eb;
+      margin-top: 2rem;
+      font-weight: 600;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 0.25rem;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.75rem;
+    }
+    footer {
+      text-align: center;
+      margin: 4rem 0 2rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+    code {
+      background: #e0e7ff;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>XNo Documentation</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Why XNo Websites Are Self-Hosted</h2>
+      <p>
+        XNo is built with a core philosophy: websites should be <strong>fast, reliable, and simple to maintain.</strong> 
+        To achieve this, XNo websites are <em>self-hosted</em> rather than relying on database-driven backends.
+      </p>
+      <p>
+        This means no external databases or servers are required to run your site — everything lives directly in your files and browser.
+      </p>
+      <p>
+        Each XNo site is hosted on a <strong>fork of the main repository</strong> that the user creates on GitHub, which is then automatically rehosted on platforms like <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a> for easy and fast global access. This seamless Git + Vercel workflow makes deployment and updates simple and serverless.
+      </p>
+    </section>
+
+    <section>
+      <h2>Benefits of a Self-Hosted Approach</h2>
+      <ul>
+        <li><strong>Avoid Database Issues:</strong> No database means no risk of downtime or data loss caused by database failures or misconfigurations.</li>
+        <li><strong>Fully Serverless:</strong> Your site runs entirely in the client’s browser, eliminating the need for backend servers or server maintenance.</li>
+        <li><strong>Better Performance:</strong> Static hosting with smart client-side logic means faster load times and instant scaling.</li>
+        <li><strong>Privacy & Control:</strong> You own your data completely. No centralized storage, no third-party dependencies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>XNo Plugins — Extending Your Site</h2>
+      <p>
+        Even though XNo sites are serverless and self-hosted, they are <strong>fully extensible</strong> through <code>XNo plugins</code>. These lightweight JavaScript modules add extra features and functionality without needing any backend infrastructure.
+      </p>
+      <p>
+        Plugins can be created by anyone — individuals, companies, or open-source communities — empowering a diverse ecosystem of enhancements.
+      </p>
+      <ul>
+        <li>Modular: Add only the plugins you need.</li>
+        <li>Easy to use: Install and configure with minimal setup.</li>
+        <li>Serverless by design: All plugins run client-side, keeping your site simple and reliable.</li>
+      </ul>
+      <p>
+        Explore available plugins at <a href="https://xnocommunity.vercel.app/plugins" target="_blank" rel="noopener noreferrer">xnocommunity.vercel.app/plugins</a>.
+      </p>
+      <p>
+        To get started, fork the main repository at <a href="https://github.com/electric-otter/xno/fork" target="_blank" rel="noopener noreferrer">https://github.com/electric-otter/xno/fork</a> and customize your site or plugins from there.
+      </p>
+      <p>
+        If you don’t want to fork, you can also submit a pull request to add your site as a folder domain, like <code>yourxnosite.xno</code>, in the main repository. <a href="https://github.com/electric-otter/xno/pull"XNo Pull request</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 XNo Project — Serverless & Self-Hosted Websites
+  </footer>
+</body>
+</html>
